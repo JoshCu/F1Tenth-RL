@@ -1,4 +1,5 @@
 # runtime directories from Linux in Docker
+.venv
 .bash_history
 .cache
 .config

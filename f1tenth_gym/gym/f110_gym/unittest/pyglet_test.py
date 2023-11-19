@@ -113,7 +113,7 @@ with open(args.map_path + '.yaml', 'r') as yaml_stream:
         print(ex)
 
 # load map image
-map_img = np.array(Image.open(args.map_path + args.map_ext).transpose(Image.FLIP_TOP_BOTTOM)).astype(np.float64)
+map_img = np.array(Image.open(args.map_path + args.map_ext).transpose(Image.FLIP_TOP_BOTTOM)).astype(float)
 map_height = map_img.shape[0]
 map_width = map_img.shape[1]
 

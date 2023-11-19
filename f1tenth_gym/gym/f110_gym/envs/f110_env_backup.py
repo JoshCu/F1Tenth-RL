@@ -116,7 +116,7 @@ class F110Env(gym.Env, utils.EzPickle):
         # self.map_img = cv2.imread(map_img_path, 0)
         # self.map_img = cv2.flip(self.map_img, 0)
         # self.map_img = np.array(Image.open(map_img_path).transpose(Image.FLIP_TOP_BOTTOM))
-        # self.map_img = self.map_img.astype(np.float64)
+        # self.map_img = self.map_img.astype(float)
         # self.map_img = self.map_img[::-1]
         # self.map_img = np.dot(self.map_img[..., :3], [0.29, 0.57, 0.14])
         # plt.imshow(self.map_img)
@@ -477,7 +477,7 @@ class F110Env(gym.Env, utils.EzPickle):
         # split yaml ext name
         map_img_path = os.path.splitext(self.map_path)[0] + img_ext
         self.map_img = np.array(Image.open(map_img_path).transpose(Image.FLIP_TOP_BOTTOM))
-        self.map_img = self.map_img.astype(np.float64)
+        self.map_img = self.map_img.astype(float)
         if flip:
             self.map_img = self.map_img[::-1]
 

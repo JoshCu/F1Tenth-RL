@@ -173,7 +173,7 @@
         <definition>f110_gym::unittest::pyglet_test.map_img</definition>
         <argsstring></argsstring>
         <name>map_img</name>
-        <initializer>=  np.array(Image.open(args.map_path + args.map_ext).transpose(Image.FLIP_TOP_BOTTOM)).astype(np.float64)</initializer>
+        <initializer>=  np.array(Image.open(args.map_path + args.map_ext).transpose(Image.FLIP_TOP_BOTTOM)).astype(float)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>

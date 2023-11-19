@@ -125,7 +125,7 @@
 <codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(ex)</highlight></codeline>
 <codeline lineno="114"><highlight class="normal"></highlight></codeline>
 <codeline lineno="115"><highlight class="normal"></highlight><highlight class="comment">#<sp/>load<sp/>map<sp/>image</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="116"><highlight class="normal">map_img<sp/>=<sp/>np.array(Image.open(args.map_path<sp/>+<sp/>args.map_ext).transpose(Image.FLIP_TOP_BOTTOM)).astype(np.float64)</highlight></codeline>
+<codeline lineno="116"><highlight class="normal">map_img<sp/>=<sp/>np.array(Image.open(args.map_path<sp/>+<sp/>args.map_ext).transpose(Image.FLIP_TOP_BOTTOM)).astype(float)</highlight></codeline>
 <codeline lineno="117"><highlight class="normal">map_height<sp/>=<sp/>map_img.shape[0]</highlight></codeline>
 <codeline lineno="118"><highlight class="normal">map_width<sp/>=<sp/>map_img.shape[1]</highlight></codeline>
 <codeline lineno="119"><highlight class="normal"></highlight></codeline>
